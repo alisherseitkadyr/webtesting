@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Assignment8 SauceDemo Suite" parallel="false">
+  <listeners>
+    <listener class-name="com.saucedemo.utils.ScreenshotUtil"/>
+  </listeners>
+
+  <test name="Smoke Tests">
+    <classes>
+      <class name="com.saucedemo.tests.SmokeTests"/>
+    </classes>
+  </test>
+
+  <test name="Regression Tests">
+    <classes>
+      <class name="com.saucedemo.tests.RegressionTests"/>
+    </classes>
+  </test>
+
+  <test name="Negative Tests">
+    <classes>
+      <class name="com.saucedemo.tests.NegativeTests"/>
+    </classes>
+  </test>
+</suite>
